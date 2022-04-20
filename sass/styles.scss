@@ -1,4 +1,6 @@
-@use 'init' as *;
+@use 'variables' as *;
+@use 'default' as *;
+
 
 .container {
     max-width: 40rem;
