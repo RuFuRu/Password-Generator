@@ -10,17 +10,21 @@
 <body>
     <div class="container">
         <h1>Generate a random password</h1>
-        <div class="display"></div>
+        <div class="display">233232</div>
         <div class="range-input">
-            <label for="range">Choose a length</label><br>
-            <input type="range" id="range" max="100">
-            <input type="number" id="range" value="1">
+            <label for="range">Choose a length</label>
+            <div class="range-div">
+                <input type="range" id="range" max="100">
+                <input type="number" id="range" value="1">
+            </div>
         </div>
         <div class="radio-input">
             <input type="radio" id="ascii"><label for="ascii">Generate password limiting to ASCII characters</label><br>
             <input type="radio" id="utf16"><label for="utf16">Generate a password with UTF-16 characters</label>
         </div>
-        <button>Generate</button>
+        <div class="button-container">
+            <button>Generate</button>
+        </div>
     </div>
 </body>
 </html>
