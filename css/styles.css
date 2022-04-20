@@ -1,0 +1,18 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 40rem;
+  border: solid 2px black;
+}
+
+.display {
+  height: 1rem;
+  width: auto;
+  border: solid 2px black;
+}
+
+/*# sourceMappingURL=styles.css.map */
