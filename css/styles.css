@@ -15,9 +15,17 @@ body {
   background-color: hsl(197deg, 34%, 65%);
 }
 
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
 .container {
   max-width: 40rem;
   border: solid 2px black;
+  padding: 3rem;
 }
 
 .display {
