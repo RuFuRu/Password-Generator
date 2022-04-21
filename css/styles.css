@@ -25,7 +25,7 @@ body {
 .container {
   max-width: 40rem;
   border-radius: 10px;
-  padding: 2.7rem 3rem 5rem 3rem;
+  padding: 3.5rem 3rem 3.5rem 3rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .container h1 {
@@ -64,7 +64,7 @@ body {
 }
 .container .radio-input {
   font-size: 1.2rem;
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
   text-align: center;
 }
 .container .radio-input br {
@@ -72,7 +72,7 @@ body {
   margin: 0.1rem 0;
 }
 .container .button-container {
-  margin-top: 5.5rem;
+  margin-top: 3rem;
   display: flex;
   justify-content: center;
 }
