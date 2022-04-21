@@ -14,3 +14,8 @@ rangeInput.addEventListener('input', () => {
 numInput.addEventListener('input', () => {
     rangeInput.value = numInput.value;
 })
+
+
+function generatePassword() {
+    
+}
