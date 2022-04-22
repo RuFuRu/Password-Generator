@@ -5,6 +5,10 @@ const utf16 = document.querySelector('#utf16');
 const display = document.querySelector('.display');
 const button = document.querySelector('button');
 
+if(display.textContent === '') {
+    display.setAttribute('style', 'padding: 1rem;')
+}
+
 numInput.value = rangeInput.value
 
 rangeInput.addEventListener('input', () => {
@@ -23,6 +27,7 @@ let rangeInputValue;
 let clicked = 0;
 
 function generatePassword() {
+    display.setAttribute('style', 'padding: 0.5rem');
     numInputValue = parseInt(numInput.value);
     rangeInputValue = parseInt(rangeInput.value);
 
