@@ -1,6 +1,6 @@
 const rangeInput = document.querySelector('.range-div input[type = "range"]');
 const numInput = document.querySelector('.range-div input[type = "number"]');
-const radioAscii = document.querySelector('#ascii');
+const ascii = document.querySelector('#ascii');
 const utf16 = document.querySelector('#utf16');
 const display = document.querySelector('.display');
 const button = document.querySelector('button');
@@ -30,6 +30,7 @@ function generatePassword() {
     display.setAttribute('style', 'padding: 0.5rem');
     numInputValue = parseInt(numInput.value);
     rangeInputValue = parseInt(rangeInput.value);
+    let random;
 
     if(typeof numInputValue !== 'number' || numInputValue < 1 || numInputValue > 100) {
         alert("Bad Input!");
@@ -43,10 +44,26 @@ function generatePassword() {
         }
 
         for(let i = 1; i <= numInputValue; i++) {
-            display.textContent += String.fromCharCode(randomInt(35,65535));
+            random = randomInt(33,65535);
+            display.textContent += String.fromCharCode(random);
         }
         
         return clicked++;
+    }
+
+    if(ascii.checked) {
+        if(clicked === 1) {
+            display.textContent = '';
+            clicked = 0;
+        }
+
+        for(let i = 1; i <= numInputValue; i++) {
+            random = randomInt(33,126);
+            display.textContent += String.fromCharCode(random);
+        }
+
+        return clicked++;
+
     }
 }
 
