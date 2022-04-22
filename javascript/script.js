@@ -38,7 +38,7 @@ function generatePassword() {
         }
 
         for(let i = 1; i <= numInputValue; i++) {
-            display.textContent += String.fromCharCode(randomInt(35,60000));
+            display.textContent += String.fromCharCode(randomInt(35,65535));
         }
         
         return clicked++;
