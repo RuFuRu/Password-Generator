@@ -20,6 +20,7 @@ button.addEventListener('click', generatePassword);
 
 let numInputValue;
 let rangeInputValue;
+let clicked = 0;
 
 function generatePassword() {
     numInputValue = parseInt(numInput.value);
@@ -28,5 +29,22 @@ function generatePassword() {
     if(typeof numInputValue !== 'number' || numInputValue < 1 || numInputValue > 100) {
         alert("Bad Input!");
     }
-    console.log(numInputValue);
+    
+    if(utf16.checked) {
+
+        if(clicked === 1) {
+            display.textContent = '';
+            clicked = 0;
+        }
+
+        for(let i = 1; i <= numInputValue; i++) {
+            display.textContent += String.fromCharCode(randomInt(35,60000));
+        }
+        
+        return clicked++;
+    }
+}
+
+function randomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
 }
