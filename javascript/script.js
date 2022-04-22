@@ -48,7 +48,7 @@ function generatePassword() {
             display.textContent += String.fromCharCode(random);
         }
         
-        return clicked++;
+        clicked++;
     }
 
     if(ascii.checked) {
@@ -62,7 +62,7 @@ function generatePassword() {
             display.textContent += String.fromCharCode(random);
         }
 
-        return clicked++;
+        clicked++;
 
     }
 }
