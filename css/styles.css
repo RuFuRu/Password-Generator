@@ -84,5 +84,9 @@ body {
   background-color: transparent;
   cursor: pointer;
 }
+.container .button-container button:hover {
+  transform: scale(1.1);
+  background-color: hsl(197deg, 34%, 55%);
+}
 
 /*# sourceMappingURL=styles.css.map */
