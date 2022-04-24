@@ -1,2 +1,2 @@
 # Password-Generator
-A password generator (WIP)
+A password generator
