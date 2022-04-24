@@ -20,6 +20,7 @@ numInput.addEventListener('input', () => {
 })
 
 button.addEventListener('click', generatePassword);
+button.addEventListener('click', clickAnimation);
 
 
 let numInputValue;
@@ -69,4 +70,9 @@ function generatePassword() {
 
 function randomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+function clickAnimation() {
+    button.setAttribute('style', 'background-color: hsl(47, 100%, 35%); transform: scale(1.1);');
+    setTimeout(() => {button.setAttribute('style', 'background-color: hsl(197, 34%, 55%); transform: scale(1.0)')}, 200);
 }
